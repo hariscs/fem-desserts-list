@@ -33,43 +33,58 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <h1 class="header__title">Desserts</h1>
-      </header>
-      <main>
-        <div class="card flex flex-column">
-          <div class="flex flex-column card card__info">
-            <div class="card__content flex flex-column">
-              <h2 class="card__title">Waffle</h2>
-              <p class="card__description">Waffle with Berries</p>
-              <p class="card__price">$6.50</p>
+      <div>
+        <header class="header">
+          <h1 class="header__title">Desserts</h1>
+        </header>
+        <main class="main">
+          <ul class="cards__list">
+            <li>
+              <div class="card flex flex-column">
+                <div class="flex flex-column card card__info">
+                  <div class="card__content flex flex-column">
+                    <h2 class="card__title">Waffle</h2>
+                    <p class="card__description">Waffle with Berries</p>
+                    <p class="card__price">$6.50</p>
+                  </div>
+                  <button class="card__button">
+                    <img
+                      src="./assets/images/icon-add-to-cart.svg"
+                      alt="add to cart"
+                    />
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+                <div class="card__image">
+                  <picture>
+                    <source
+                      media="(max-width: 600px)"
+                      srcset="./assets/images/image-waffle-mobile.jpg"
+                    />
+                    <source
+                      media="(min-width: 601px)"
+                      srcset="./assets/images/image-waffle-desktop.jpg"
+                    />
+                    <img
+                      src="./assets/images/image-waffle-desktop.jpg"
+                      alt="Waffle with Berries"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- cart -->
+          <div class="cart">
+            <div class="cart__content">
+              <h2 class="cart__title">Cart</h2>
+              <ul class="cart__list">
+                <li class="cart__item">a</li>
+              </ul>
             </div>
-            <button class="card__button">
-              <img
-                src="./assets/images/icon-add-to-cart.svg"
-                alt="add to cart"
-              />
-              <span>Add to Cart</span>
-            </button>
           </div>
-          <div class="card__image">
-            <picture>
-              <source
-                media="(max-width: 600px)"
-                srcset="./assets/images/image-waffle-mobile.jpg"
-              />
-              <source
-                media="(min-width: 601px)"
-                srcset="./assets/images/image-waffle-desktop.jpg"
-              />
-              <img
-                src="./assets/images/image-waffle-desktop.jpg"
-                alt="Waffle with Berries"
-              />
-            </picture>
-          </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
 
     <!-- Waffle with Berries
