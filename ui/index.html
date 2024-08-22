@@ -1,74 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product list with cart</title>
+    <title>Frontend Mentor | Product list with cart</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,400..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <header class="header">
+          <h1 class="header__title">Desserts</h1>
+        </header>
+        <main class="main">
+          <ul class="cards__list">
+            <li>
+              <div class="card flex flex-column">
+                <div class="flex flex-column card card__info">
+                  <div class="card__content flex flex-column">
+                    <h2 class="card__title">Waffle</h2>
+                    <p class="card__description">Waffle with Berries</p>
+                    <p class="card__price">$6.50</p>
+                  </div>
+                  <button class="card__button">
+                    <img
+                      src="./assets/images/icon-add-to-cart.svg"
+                      alt="add to cart"
+                    />
+                    <span>Add to Cart</span>
+                  </button>
+                </div>
+                <div class="card__image">
+                  <picture>
+                    <source
+                      media="(max-width: 600px)"
+                      srcset="./assets/images/image-waffle-mobile.jpg"
+                    />
+                    <source
+                      media="(min-width: 601px)"
+                      srcset="./assets/images/image-waffle-desktop.jpg"
+                    />
+                    <img
+                      src="./assets/images/image-waffle-desktop.jpg"
+                      alt="Waffle with Berries"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- cart -->
+          <div class="cart">
+            <div class="cart__content">
+              <h2 class="cart__title">Cart</h2>
+              <ul class="cart__list">
+                <li class="cart__item">a</li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
 
-  Desserts
-
-  Waffle with Berries
+    <!-- Waffle with Berries
   Waffle
   6.50
-  Add to Cart
+  Add to Cart -->
 
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
-
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
-
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
-
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
-
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
-
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
-
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
-
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
-
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
-
-  <div class="attribution">
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </div> -->
+  </body>
 </html>
